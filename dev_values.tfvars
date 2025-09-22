@@ -36,9 +36,10 @@ kub_sub = {
   }
  keypair = {
       keyname = "dev-key-pair"
-      pubkey =  "~/.ssh/id_ed25519.pub"
+      pubkey =  "~/.ssh/<Your Pub Key>"
    }
 }
+
 
 
 
