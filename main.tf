@@ -105,7 +105,7 @@ resource "null_resource" "dev_provision" {
     type        = "ssh"
     user        = "ubuntu"
     host        = aws_instance.dev_ec2.public_ip
-    private_key = file("~/.ssh/id_ed25519")
+    private_key = file("~/.ssh/<your pvt key>")
   }
 
   provisioner "remote-exec" {
@@ -165,3 +165,4 @@ resource "null_resource" "dev_provision" {
 #     ]
 # }
 }
+
